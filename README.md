@@ -65,13 +65,15 @@ Record-level data view for slicing and drill-down analysis.
 ---
 
 ## 🗃️ SQL Queries
-SQL scripts include:
-- KPI calculations (SUM, AVG, COUNT, ROUND, DATEPART, CTEs)  
-- Month-to-Date (MTD) and Month-over-Month (MoM) functions  
-- Good vs Bad loan classification queries  
-- Aggregations by status, purpose, state, term, employment length  
+All SQL queries used in this project are available here:  
+📂 [SQLQuery111111.sql](SQLQuery111111.sql)
 
-> 📂 See [`sql/bank_loan_queries.sql`](sql/bank_loan_queries.sql) for complete queries.  
+The script includes:
+- KPI calculations (Total Applications, Funded Amount, Amount Received, Avg Interest Rate, Avg DTI)  
+- Month-to-Date (MTD) and Month-over-Month (MoM) trend queries  
+- Good vs Bad loan classification queries  
+- Aggregations by status, purpose, state, term, and employment length  
+ 
 
 ---
 
