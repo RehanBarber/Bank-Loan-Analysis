@@ -42,7 +42,7 @@ README.md -- Project overview (this file)
 
 ### **1. Summary Dashboard**
 Key KPIs, Good vs Bad loan split, Loan Status grid.  
-![Summary Dashboard](images/2.png)
+![Summary](2.png)
 
 ---
 
@@ -54,13 +54,13 @@ Trends & segment analysis:
 - Employment length impact (bar chart)  
 - Loan purpose breakdown (bar chart)  
 - Home ownership analysis (tree map)  
-![Overview Dashboard](images/3.png)
+![Overview](3.png)
 
 ---
 
 ### **3. Details Dashboard**
 Record-level data view for slicing and drill-down analysis.  
-![Details Dashboard](images/4.png)
+![Details](4.png)
 
 ---
 
