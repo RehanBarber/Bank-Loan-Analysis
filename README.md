@@ -17,7 +17,7 @@ The project demonstrates the end-to-end data workflow: importing raw data → wr
 sql/ -- SQL scripts (KPI queries, good vs bad loans, trend analysis)
 powerbi/ -- Power BI report (.pbix)
 ppt/ -- Project presentation deck
-images/ -- Dashboard screenshots (used in this README)
+images/ -- Dashboard screenshots (2.png, 3.png, 4.png)
 data/README.md -- Dataset source and notes
 README.md -- Project overview (this file)
 
