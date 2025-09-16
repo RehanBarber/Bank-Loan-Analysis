@@ -1,114 +1,57 @@
-# Bank Loan Analytics — SQL + Power BI 📊
+# Bank-Loan-Summary-and-Overview-Excel-Dashboard
+# Overview
 
-A complete **Data Analytics portfolio project** analyzing ~38k+ bank loans using **MS SQL Server** and **Power BI**.  
-The project demonstrates the end-to-end data workflow: importing raw data → writing SQL queries → building interactive dashboards → generating business insights.  
+This repository contains an analysis of a bank loan dataset with 38,572 entries, focusing on loan performance, borrower demographics, and key financial metrics. The data was processed in Excel to generate summaries, dashboards, and visualizations. Primary goals: Identify risk factors, repayment trends, and opportunities for lending optimization.
+Dataset Source: Provided Excel file ("Bank Loan Summary and Overview Dashboard.xlsx") with sheets for raw data, design calculations, and dashboards.
 
----
+# Primary KPIs
 
-## 🔧 Tech Stack
-- **SQL (MS SQL Server)** – queries, KPIs, aggregations  
-- **Power BI** – data modeling, DAX, interactive dashboards  
-- **Excel** – cleaning, verification, cross-checking outputs  
-- **GitHub** – version control, portfolio hosting  
+Total Loan Applications: 38,572, 
+Total Funded Amount: $435,733,175, 
+Total Amount Received: $473,043,890. 
 
----
+# Secondary KPIs
 
-## 📂 Repository Structure
-sql/ -- SQL scripts (KPI queries, good vs bad loans, trend analysis)
-powerbi/ -- Power BI report (.pbix)
-ppt/ -- Project presentation deck
-images/ -- Dashboard screenshots (2.png, 3.png, 4.png)
-data/README.md -- Dataset source and notes
-README.md -- Project overview (this file)
+Average Interest Rate: 12.05%, 
+Average Debt-to-Income (DTI) Ratio: 13.33%, 
+
+Good Loan Percentage: 86.17% (Applications: 33,239; Funded: $370,200,950; Received: $435,759,127), 
+
+Bad Loan Percentage: 13.83% (Applications: 5,333; Funded: $65,532,225; Received: $37,284,763). 
 
 
----
+# Loan Status Breakdown:
 
-## 🧮 Business KPIs
-- **Total Loan Applications** (+ Month-to-Date, MoM changes)  
-- **Total Funded Amount** (+ Month-to-Date, MoM changes)  
-- **Total Amount Received** (+ Month-to-Date, MoM changes)  
-- **Average Interest Rate** (overall, MTD, MoM trend)  
-- **Average Debt-to-Income Ratio (DTI)**  
+Fully Paid: 32,141 (83.32%)
+Current: 1,098 (2.85%)
+Charged Off: 5,333 (13.83%)
 
-### Good vs Bad Loans
-- % of Good Loan Applications vs Bad Loan Applications  
-- Funded Amount (Good vs Bad)  
-- Received Amount (Good vs Bad)  
 
----
+# Term Distribution:
 
-## 📊 Dashboards
+36 months: 28,234 (73.18%)
+60 months: 10,338 (26.82%)
 
-### **1. Summary Dashboard**
-Key KPIs, Good vs Bad loan split, Loan Status grid.  
-![Summary](2.png)
 
----
 
-### **2. Overview Dashboard**
-Trends & segment analysis:  
-- Monthly lending activity (line chart)  
-- Regional lending by state (map)  
-- Loan term distribution (donut chart)  
-- Employment length impact (bar chart)  
-- Loan purpose breakdown (bar chart)  
-- Home ownership analysis (tree map)  
-![Overview](3.png)
+# Major Findings
 
----
+Geographic Distribution: Top states include California (6,893 applications, 17.87%), New York (3,701, 9.60%), and Texas (2,661, 6.90%). Lower activity in states like Iowa (5) and Maine (3) suggests regional lending biases or market opportunities.
 
-### **3. Details Dashboard**
-Record-level data view for slicing and drill-down analysis.  
-![Details](4.png)
+Loan Purposes: Debt consolidation is the most common (18,214 or 47.22%), followed by credit card refinancing (4,998 or 12.96%) and other (3,824 or 9.91%). This indicates a focus on consumer debt relief.
 
----
+Employment Length Insights: Borrowers with 10+ years of experience (8,868 or 22.97%) have better repayment rates. Shorter tenures (e.g., <1 year: 4,574 or 11.86%) correlate with higher charged-off rates, emphasizing the need for tenure-based risk scoring.
 
-## 🗃️ SQL Queries
-All SQL queries used in this project are available here:  
-📂 [SQLQuery111111.sql](SQLQuery111111.sql)
+Home Ownership Trends: Renters dominate (18,438 or 47.81%), with higher average DTIs than mortgage holders (17,195 or 44.58%). This could inform targeted products for renters.
 
-The script includes:
-- KPI calculations (Total Applications, Funded Amount, Amount Received, Avg Interest Rate, Avg DTI)  
-- Month-to-Date (MTD) and Month-over-Month (MoM) trend queries  
-- Good vs Bad loan classification queries  
-- Aggregations by status, purpose, state, term, and employment length  
- 
+Temporal Trends: Peak applications in November (20,850 or 54.05%) and October (11,197 or 29.03%). Month-over-Month growth from August to September was 221.83% in funded amount, possibly due to end-of-year financial planning.
 
----
+Risk Highlights: Bad loans have higher average interest rates (13.88%) and DTIs (14.00%) compared to good loans (11.64% rate, 13.17% DTI). Charged-off loans total $65.5M funded but only $37.3M received, representing significant losses.
 
-## ▶️ How to Run
-1. Import dataset into **MS SQL Server** (or use CSV if available).  
-2. Run queries from `sql/` folder to generate KPIs and validation tables.  
-3. Open `powerbi/Bank-Loan-Report.pbix` in **Power BI Desktop**.  
-4. Update SQL Server connection string → **Refresh Data**.  
-5. Navigate through Summary, Overview, and Details dashboards.  
+# Methodology
 
----
+Data Processing: Used Excel pivots, formulas, and charts from the "Design" sheet for aggregations (e.g., SUM, AVERAGE, COUNT).
 
-## 📑 Insights & Outcomes
-- Majority of loans were issued for **Debt Consolidation & Credit Card payoff**.  
-- **Good Loans** formed ~86% of applications, contributing >90% of received amount.  
-- Borrowers with **longer employment length** showed higher repayment reliability.  
-- States with larger populations had significantly higher loan disbursement.  
-- Average **DTI ~18%** indicated moderate repayment capacity across borrowers.  
+Visualizations: Includes state maps, pie charts for terms/purposes, bar charts for trends (embedded in dashboards).
 
----
-
-## 🎯 Learning Outcomes
-- Hands-on with **SQL queries**, joins, aggregates, CTEs, and KPIs.  
-- Applied **data cleaning, modeling, and DAX** in Power BI.  
-- Built **professional dashboards** for real-world business scenarios.  
-- Strengthened communication of insights with presentation deck and visualizations.  
-
----
-
-## 📬 Contact
-👤 **Anuj Kumar Jha**  
-📧 Email: [anujjha.dev@gmail.com](mailto:anujjha.dev@gmail.com)  
-🔗 [LinkedIn]([https://linkedin.com](https://www.linkedin.com/in/anujjha-dev/))
-
----
-
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).  
+Assumptions: Dates are in numeric format (e.g., 44447 for ~Jan 2012); focused on provided summaries to avoid raw data parsing issues.
